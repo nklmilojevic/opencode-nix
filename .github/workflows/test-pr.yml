@@ -31,7 +31,7 @@ jobs:
       - name: Setup Nix cache
         uses: cachix/cachix-action@v15
         with:
-          name: opencode-nix
+          name: opencode-nix-cache
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
           skipPush: true
 

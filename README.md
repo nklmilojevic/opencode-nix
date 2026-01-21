@@ -68,8 +68,8 @@ To download pre-built binaries instead of compiling:
 # Install cachix if you haven't already
 nix-env -iA cachix -f https://cachix.org/api/v1/install
 
-# Add the opencode-nix cache
-cachix use opencode-nix
+# Add the opencode-nix-cache cache
+cachix use opencode-nix-cache
 ```
 
 Or add to your Nix configuration:
@@ -77,8 +77,8 @@ Or add to your Nix configuration:
 ```nix
 {
   nix.settings = {
-    substituters = [ "https://opencode-nix.cachix.org" ];
-    trusted-public-keys = [ "opencode-nix.cachix.org-1:YOUR_PUBLIC_KEY_HERE" ];
+    substituters = [ "https://opencode-nix-cache.cachix.org" ];
+    trusted-public-keys = [ "opencode-nix-cache.cachix.org-1:YOUR_PUBLIC_KEY_HERE" ];
   };
 }
 ```
@@ -218,7 +218,7 @@ For manual updates:
 ### Push to Cachix manually
 ```bash
 nix build .#opencode
-cachix push opencode-nix ./result
+cachix push opencode-nix-cache ./result
 ```
 
 ## Troubleshooting
