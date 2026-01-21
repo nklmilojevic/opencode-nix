@@ -78,7 +78,7 @@ Or add to your Nix configuration:
 {
   nix.settings = {
     substituters = [ "https://opencode-nix-cache.cachix.org" ];
-    trusted-public-keys = [ "opencode-nix-cache.cachix.org-1:YOUR_PUBLIC_KEY_HERE" ];
+    trusted-public-keys = [ "opencode-nix-cache.cachix.org-1:Wq9yk7XD0pg457w4D5HV2OJVj++tl70tfzde1SrfYX8=" ];
   };
 }
 ```
