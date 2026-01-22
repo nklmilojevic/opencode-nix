@@ -40,8 +40,8 @@ update_hash_for_platform() {
     local file="$3"
 
     # Use awk to find the platform block and update the hash
-    awk -v system="$nix_system" -v hash="$new_hash" '
-        $0 ~ "\"" system "\" = \\{" { in_block = 1 }
+    awk -v target_system="$nix_system" -v hash="$new_hash" '
+        $0 ~ "\"" target_system "\" = \\{" { in_block = 1 }
         in_block && /sha256 = / {
             sub(/sha256 = "[^"]*"/, "sha256 = \"" hash "\"")
             in_block = 0
