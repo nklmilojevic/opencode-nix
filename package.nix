@@ -5,24 +5,24 @@
 }:
 
 let
-  version = "1.2.9";
+  version = "1.2.10";
 
   platformInfo = {
     "x86_64-linux" = {
       platform = "linux-x64";
-      sha256 = "0x5fjrgjv0n2aqmxj7yc6yscvvb9vgd4sfag91dqxnb8lgj07af3";
+      sha256 = "09vzbw34smgrpkjphs5r0rrn9hqczrcsv6pavac5gg5nmzr14h33";
     };
     "aarch64-linux" = {
       platform = "linux-arm64";
-      sha256 = "1f1290287cs2qx1wsp4db4bkp081fn8mnkwgvymwzgjdr4is87wq";
+      sha256 = "15wlvhg0bww1c4c7fbwj4hbavk786bdydk3fl35av5k6dhfvj0mz";
     };
     "x86_64-darwin" = {
       platform = "darwin-x64";
-      sha256 = "1fwar9hz6vv79py5bagjn4k1p33pl6s5iix5hwfvkh2crsnbz5vi";
+      sha256 = "02i36r78c6xhiiz9hfwv9hibdyfganhm7n3jp0d7ajw37yqc91b7";
     };
     "aarch64-darwin" = {
       platform = "darwin-arm64";
-      sha256 = "0356ffbrjw72zjm10zcm83zfkx12ck8g8afzm8mdjgznpij2kxwf";
+      sha256 = "1dvcf15xp1m22shhmqrah2nz9rlpm40d29mgpshqrc5x32mlzivv";
     };
   };
 
