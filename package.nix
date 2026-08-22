@@ -37,7 +37,7 @@ in stdenv.mkDerivation {
     sha256 = currentPlatform.sha256;
   };
 
-  nativeBuildInputs = lib.optionals stdenv.isLinux [ autoPatchelfHook ];
+  nativeBuildInputs = lib.optionals stdenv.hostPlatform.isLinux [ autoPatchelfHook ];
 
   dontConfigure = true;
   dontBuild = true;
